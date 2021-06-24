@@ -212,7 +212,7 @@ class SurveyAdministrationController extends LSBaseController
         $aData['model'] = new Survey('search');
         $aData['groupModel'] = new SurveysGroups('search');
 
-        $aData['pageTitle'] = 'Survey list';
+        $aData['pageTitle'] = gT('Survey list');
         $aData['fullpagebar']['listSurveys']['buttons']['createSurvey']['url'] = $this->createUrl("surveyAdministration/newSurvey");
 
         $this->aData = $aData;
@@ -404,7 +404,7 @@ class SurveyAdministrationController extends LSBaseController
         $arrayed_data['fullpagebar']['closebutton']['url'] = 'admin/index'; // Close button
 
         // Green Bar Page Title
-        $aData['pageTitle'] = "Create, import, or copy survey";
+        $aData['pageTitle'] = gT("Create, import, or copy survey");
 
         $aData['fullpagebar']['savebutton']['form'] = 'addnewsurvey';
         $aData['fullpagebar']['closebutton']['url'] = 'admin/index'; // Close button
