@@ -60,6 +60,9 @@ class UserManagementController extends LSBaseController
             false
         );
 
+        // Green Bar (SurveyManagerBar) Page Title
+        $aData['pageTitle'] ='User management panel';
+
         //this is really important, so we have the aData also before rendering the content
         $this->aData = $aData;
 
@@ -1193,7 +1196,7 @@ class UserManagementController extends LSBaseController
 
         return [
             'success' => false,
-            'errors' => CHtml::tag("p", array(), gT("Error: no user was created"))
+            'errors' => CHtml::tag("p", array(), gT("Error: User was not created"))
         ];
     }
 
